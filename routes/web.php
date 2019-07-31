@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('user','UserController');
+
+//Route::get('uploadFile',function() {
+//    return view('postFile');
+//});
+//Route::post('postFile',['as'=>'postFile','use'=>'UserController@postFile']);
